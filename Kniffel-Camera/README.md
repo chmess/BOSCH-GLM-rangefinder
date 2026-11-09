@@ -44,3 +44,8 @@ Erstelle eine lauffähige Android-Studio-Grundstruktur für `Kniffel-Camera` mit
 - Würfel als dreidimensionale Objekte betrachten: nur Augen der **Oberseite** zählen, nicht die sichtbaren Seitenflächen.
 - Bei überlappenden, verdeckten oder schräg liegenden Würfeln Konfidenz senken und manuelle Bestätigung verlangen.
 - Kamerawinkel und Beleuchtung auf verschiedenen Android-Geräten testen, keine feste Winkelgarantie behaupten.
+
+## Plattformentscheidung (Planungsstand 2026-11-09)
+Primärziel ist nun eine **offlinefähige Progressive Web App (PWA)** statt der zuerst angedachten nativen Android-App. Das ist eine vorläufige Architekturentscheidung; Praxistests mit echten Würfeln erfolgen später. Ziel: Android, iPhone und Desktop-Browser, Installation zum Startbildschirm, ohne Pflicht-Backend oder Benutzerkonto. HTTPS für Kamera und Installation berücksichtigen. Spielstände lokal in IndexedDB; Service Worker für Offline-App-Shell. Keine Garantie für Kamerabetrieb im Hintergrund oder bei gesperrtem Gerät.
+
+Technikvorschlag: TypeScript + React (oder eine vergleichbar schlanke UI), Vite, PWA-Service-Worker; `getUserMedia` für Kamera, Bildverarbeitung in einem Worker per OpenCV.js/WebAssembly, falls notwendig. `GameEngine` und `DiceObservationProvider` als klar getrennte Interfaces, damit eine spätere native CameraX-Implementierung oder eine Capacitor-Hülle möglich bleibt. Von Anfang an einen simulierten Würfel-Input anbieten, damit die gesamte App ohne vorhandene Würfel entwickelt und getestet werden kann.

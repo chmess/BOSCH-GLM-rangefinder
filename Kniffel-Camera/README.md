@@ -37,3 +37,10 @@ Der klassische Kniffel-Spielzettel bleibt dauerhaft sichtbar. Darüber oder dane
 
 ## Erste Aufgabe für Codex
 Erstelle eine lauffähige Android-Studio-Grundstruktur für `Kniffel-Camera` mit sauber getrennten Modulen für Kniffel-Regeln, Spielzustand und Compose-Oberfläche. Implementiere zuerst den Papierblock mit mehreren Spielerspalten, manuell antippbare Würfel und vollständig getestete Wertungsregeln. Noch keine vorgetäuschte Kameraerkennung.
+
+## Schräg aufgestellte Kamera (festgelegtes Entwicklungsziel)
+- Kamera seitlich auf Tischständer, beispielsweise ca. 45–60° über der Tischfläche; nicht zwingend senkrecht.
+- Vier-Punkt-Kalibrierung der Tischfläche für perspektivisch korrekte Wurf-/Haltezonen.
+- Würfel als dreidimensionale Objekte betrachten: nur Augen der **Oberseite** zählen, nicht die sichtbaren Seitenflächen.
+- Bei überlappenden, verdeckten oder schräg liegenden Würfeln Konfidenz senken und manuelle Bestätigung verlangen.
+- Kamerawinkel und Beleuchtung auf verschiedenen Android-Geräten testen, keine feste Winkelgarantie behaupten.

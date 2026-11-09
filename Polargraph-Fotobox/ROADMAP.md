@@ -1,0 +1,12 @@
+# Entwicklungsroadmap
+
+1. **Software-Simulator**: Plottergeometrie, erlaubter Zeichenbereich, Seil-zu-Motorschritt-Umrechnung, Stiftversätze, SVG-Vorschau, Testmuster, automatisierte Tests. Kein mechanischer Aufbau erforderlich.
+2. **Mega/RAMPS-Anbindung**: tatsächliche Treiber und Firmware klären; serielles Protokoll mit Acknowledgements, Limits, Pause/Stop, sicheren Startbedingungen; zunächst ein Stift.
+3. **Offline-Zeichenpipeline**: Bilder -> Konturen, Schraffuren, Farb-/Stiftauswahl, Detailstufe, geschätzte Dauer; unterstützt Raspberry und später Android.
+4. **Mehrstift-Kopf**: Servo-/Leerlaufwinkel, Stiftversätze und Kalibrierung, Prüfung sicherer Pen-Up-Fahrten.
+5. **Kamera-Kalibrierung**: Papiervermessung, gelerntes Fehlerfeld/Parameter, Persistenz, später Kamera abziehen und offline zeichnen.
+6. **Fotobox**: zwei Knöpfe lokal/Online-KI, lokale Bildfilter, Onlineprovider nur opt-in, Datenschutz und Aufnahmelöschung.
+7. **Papierrolle und Aktenvernichter**: einziehendes Vorschubmodul mit Weg-/Stausensor, Präsentationszeit und separat überprüfter Sicherheit.
+8. **Zweiter Host Android**: Redmi Note 9 Pro über USB-C-OTG -> USB-Kabel -> Mega. Native USB-Serial-Bridge mit Android USB Host API (z. B. usb-serial-for-android), eigenständige App oder Hybridoberfläche; USB-Reconnect, Stromversorgung und Hintergrundbetrieb testen.
+
+Reihenfolge 3/5/8 bei Bedarf ändern; Abhängigkeiten klar dokumentieren. Kein Zwang zu Tests mit echten Würfeln — gehört zu einem anderen Projekt.

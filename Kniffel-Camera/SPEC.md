@@ -22,3 +22,15 @@ Game(id, createdAt, rulesVersion, status); Player(id, name, order); Turn(gameId,
 - Zone kalibrierbar, Zonenwechsel visuell markiert.
 - Funktioniert ohne Netz und ohne Kamera-Berechtigung im manuellen Modus.
 - Bosch-Projektdateien und Repository-Root nicht verändern.
+
+## Modulare Mehrspiele-Architektur (beschlossen)
+Die Hardware-/Kameraebene wird strikt von den Spielregeln getrennt. Kniffel ist das erste aktiv implementierte Spiel; weitere Regelpakete (z. B. Yatzy und Mäxchen) sind Erweiterungsoptionen, keine Voraussetzung für das erste APK.
+
+- `camera-core`: CameraX, Tischkalibrierung auch bei schräger Kameraposition, Wurf-/Halte-Zonen, Würfelflächen-/Augenerkennung, Tracking, Bewegung/Stillstand und Konfidenzen.
+- `dice-domain`: neutrales Modell von Würfeln, Würfen, Haltestatus und korrigierbaren Erkennungsergebnissen; keine Kniffel-spezifische Logik.
+- `game-api`: definierte Schnittstelle für Spiele (Metadaten, Spieleranzahl, Wertungsoptionen, Zugablauf, erlaubte Würfelanzahl, Zustandsserialisierung, Regelvalidierung, UI-Beschreibungen).
+- `games/kniffel`: klassische Regeln, Punktetabelle, Bonus und Sonderregeln, Tests.
+- `app-ui`: klassischer Kniffel-Zettel als erste spielspezifische UI, große farbige Würfel und Wertungsvorschläge; später andere Spieloberflächen über Schnittstellen.
+- `storage`: lokale Spielstände, Statistiken und Korrektur-/Undo-Verlauf, versionierte Spielregeldaten.
+
+Optionale spätere Module: Strategiehilfe (mit nachvollziehbarer Begründung, kein garantierter Optimaltipp), Sprachbefehle mit Bestätigung vor Wertung, Plausibilitäts-/Schiedsrichterhinweise, Statistiken, lokaler Zweitbildschirm und weitere Würfelspiele. Alle zusätzlichen Funktionen sollen abschaltbar und für ein erstes spielbares Kniffel-MVP nicht blockierend sein.

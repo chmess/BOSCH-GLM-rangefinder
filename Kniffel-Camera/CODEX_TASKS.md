@@ -17,3 +17,8 @@ CameraX-Integration mit Kalibrierung der Wurf- und Haltezone; dann erst die Bild
 
 ## Akzeptanz
 Projekt lässt sich in Android Studio öffnen und bauen; Unit-Tests sind grün; auf einem Android-Handy spielbar ohne Internet und ohne Kamerazugriff. Bericht über umgesetzte und offene Punkte mit Commit-Hash und Build-/Teststatus. Keine vorgetäuschten Testergebnisse.
+
+## Aktualisierte Plattformvorgabe: PWA statt nativer Android-App
+Die oben beschriebene Android-Studio-/Kotlin-Erstimplementierung ist **überholt**. Codex soll **keine native Android-App als MVP** erstellen. Stattdessen ein im Unterordner separat startbares, offlinefähiges TypeScript-PWA-Projekt (Vite + React empfohlen), das auf Smartphones und Desktop-Browsern funktioniert. Kameraschnittstelle per Browser-`getUserMedia`; echte optische Erkennung erst in einer späteren Phase. Keine Backendpflicht, keine Anmeldung; Offline-Caching und lokale Speicherung. Die Spielregeln und das UI unabhängig von Kamera/Erkennungsalgorithmus halten.
+
+**Erster Entwicklungsschritt ohne echte Würfel:** nutzbarer klassischer Spielzettel mit mehreren Spielern, großen farbigen virtuellen Würfeln, manuellem und simuliertem Würfeln, plausiblen Wertungsvorschlägen, Wurf-/Haltelogik, Score-Berechnung, Autosave/Undo, Tests und responsivem Layout. In Dokumentation Build-, Dev- und Offline-Testschritte nennen. Kein echter Würfeltest als Voraussetzung.

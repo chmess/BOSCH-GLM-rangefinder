@@ -16,3 +16,6 @@ Eigenständiges Projekt für einen selbstoptimierenden, modularen Wandplotter mi
 - [CODEX_AUFTRAG.md](CODEX_AUFTRAG.md): erster konkreter Entwicklungsauftrag
 
 **Status:** Konzept, kein ausführbares Projekt und keine getestete Firmware.
+
+## Plattformentscheidung (09.11.2026)
+**Android ist die bevorzugte Steuerzentrale.** Das Redmi Note 9 Pro ist Referenzgerät, andere Android-Handys sollen ebenfalls laufen. Raspberry Pi 3 bleibt als späterer Alternativhost. **Kein Root und kein entsperrter Bootloader notwendig** für reguläre Kamera-/USB-Host-APIs. USB-OTG über USB-C zu Arduino Mega/RAMPS; genaue Treiber-/Adapterkompatibilität wird später praktisch geprüft. Echtzeit-Schrittmotorsteuerung bleibt auf dem Mega; das Telefon plant und übermittelt Befehle. Android-App möglichst schlank; modularer wiederverwendbarer Algorithmuskern. Ladebetrieb bei OTG und Hintergrund-/Thermoverhalten prüfen.

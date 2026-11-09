@@ -10,3 +10,6 @@
 8. **Zweiter Host Android**: Redmi Note 9 Pro über USB-C-OTG -> USB-Kabel -> Mega. Native USB-Serial-Bridge mit Android USB Host API (z. B. usb-serial-for-android), eigenständige App oder Hybridoberfläche; USB-Reconnect, Stromversorgung und Hintergrundbetrieb testen.
 
 Reihenfolge 3/5/8 bei Bedarf ändern; Abhängigkeiten klar dokumentieren. Kein Zwang zu Tests mit echten Würfeln — gehört zu einem anderen Projekt.
+
+## Prioritätsänderung (09.11.2026)
+**Android zuerst**, Raspberry Pi 3 als optionaler weiterer Host. Phase 1 Simulator und Phase 2 Hardware-Schnittstelle sollen deshalb bereits auf Android zielen; die frühere Phase 8 wird nach vorn gezogen. Referenz: Redmi Note 9 Pro, jedoch kein herstellerspezifischer Zwang. Kein Root/Bootloader-Unlock erforderlich. Native Android USB-Host/Serial-Anbindung; Arduino übernimmt deterministisches Motion-Timing. Test ohne angeschlossene Hardware über Simulationsmodus. Keine Motorsteuerung allein über WebSerial voraussetzen.

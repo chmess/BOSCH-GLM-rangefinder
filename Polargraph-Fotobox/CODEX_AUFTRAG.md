@@ -16,3 +16,6 @@ Repository: `chmess/BOSCH-GLM-rangefinder`, Arbeitsverzeichnis **ausschließlich
 - Zwei-Tasten-Fotobox, lokale Verarbeitung versus bewusste Online-KI-Verarbeitung.
 - Keine hochgeladenen Besucherfotos, API-Schlüssel, persönlichen Daten oder sensiblen Messdaten ins öffentliche Repository.
 - Sicherheitsrelevante echte Bewegung erst nach separat geprüften Endlagen und Not-Aus.
+
+## Geänderter Implementierungsauftrag (09.11.2026; gilt vorrangig)
+**Primäre App-Plattform: Android**, Referenz Redmi Note 9 Pro, kompatibel mit weiteren Android-Geräten. Bitte keinen ausschließlich auf Raspberry Pi ausgerichteten Prototyp als Hauptanwendung bauen. Zuerst Android-App mit Simulator, Zeichenpfadvorschau und modularer Polargraph-Kinematik entwickeln. Native USB-OTG/USB-Serial-Integration zur Mega-2560-/RAMPS-Hardware als getrennte, zunächst simulierte Schnittstelle planen; Firmware vor realen Motorversuchen festlegen. Root oder Bootloader-Entsperrung ist keine Voraussetzung. Pi-3-Host ist optional; Kernlogik nach Möglichkeit plattformneutral halten. Erst ohne Hardware vollständigen Zeichnungsablauf demonstrieren und testen.

@@ -34,3 +34,18 @@ Die Hardware-/Kameraebene wird strikt von den Spielregeln getrennt. Kniffel ist 
 - `storage`: lokale Spielstände, Statistiken und Korrektur-/Undo-Verlauf, versionierte Spielregeldaten.
 
 Optionale spätere Module: Strategiehilfe (mit nachvollziehbarer Begründung, kein garantierter Optimaltipp), Sprachbefehle mit Bestätigung vor Wertung, Plausibilitäts-/Schiedsrichterhinweise, Statistiken, lokaler Zweitbildschirm und weitere Würfelspiele. Alle zusätzlichen Funktionen sollen abschaltbar und für ein erstes spielbares Kniffel-MVP nicht blockierend sein.
+
+## PWA-Architektur: Planungsentscheidung ohne Praxistest
+Primäre Plattform: installierbare PWA auf mobilen Browsern, Offline-Spiel ohne Server nach Erstinstallation. Kamera über `getUserMedia` nur bei Berechtigung in sicherem Kontext (HTTPS bzw. lokale Entwicklungsumgebung); im Hintergrund und bei gesperrtem Bildschirm nicht verlässlich verfügbar. Kein automatisches Persistieren von Videobildern. App-Assets mit Service Worker cachen; Spielstände und Kalibrierungsdaten in IndexedDB, mit Import-/Exportmöglichkeit. Browser können Daten bei bestimmten Speicherbedingungen löschen; daher Backups ermöglichen.
+
+Modulgrenzen:
+- `app-shell`: PWA, Installation, Offline, Layout, Berechtigungen
+- `game-core`: spielspezifische Regeln über ein GameDefinition-Interface, unabhängig von Browser/APIs
+- `games/kniffel`: Scorecard und klassische Wertung
+- `dice-input`: manuelle Eingabe, Simulator oder Kamera als austauschbare Quellen
+- `camera-web`: Stream, Kalibrierung, Zonen, Bewegungs-/Stillstandsdetektion, konfigurierbare Bildfrequenz
+- `vision`: isolierte Algorithmen mit austauschbarer OpenCV.js/WASM- oder ML-Implementierung, vorzugsweise Worker
+- `persistence`: Offline-Spielstände, Export/Import, Undo, Versionierung
+- `optional-features`: Strategie, Sprache, Statistik, Schiedsrichter, Zweitdisplay
+
+Umsetzung in Stufen: (1) PWA mit manuellem/simuliertem Würfelinput und Scorecard; (2) Kameravorschau mit freier Wurf-/Haltezone und schräger Tischkalibrierung; (3) echte Augenerkennung inkl. Oberseitenunterscheidung und Konfidenzwarnung; (4) Wurferkennung/Tracking und Robustheit; (5) weitere Spiele und Erweiterungen. Eine native Umsetzung kann später ergänzt werden, falls reale Performance-/Kameratests dies begründen.

@@ -1,0 +1,180 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Length 1936 >>
+stream
+0.95 0.97 0.97 rg 0 0 595 842 re f
+0.08 0.36 0.38 rg 0 717 595 125 re f
+BT /F2 25 Tf 1 1 1 rg 45 784 Td (POLARGRAPH-FOTOBOX) Tj ET
+BT /F1 12 Tf 0.88 0.96 0.94 rg 45 759 Td (Projektvorstellung für den gemeinsamen Selbstbau) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 677 Td (DIE IDEE) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 655 Td (Eine Zeichenmaschine für Veranstaltungen und Ausstellungen: Ein Besucher stellt sich vor) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 639 Td (die Kamera. Ein Android-Handy verwandelt das Foto in eine vereinfachte Linienzeichnung. Ein) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 623 Td (an zwei Seilen geführter Zeichenkopf zeichnet sie sichtbar auf Papier.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 588 Td (WAS DAS GERÄT KÖNNEN SOLL) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 566 Td (Porträts und andere Motive zeichnen, mehrere Zeichenstile anbieten, drei Stifte automatisch) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 550 Td (wählen und die Zeichnung vorab zeigen. Später sollen eine kameragestützte Korrektur und) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 534 Td (automatischer Papiertransport hinzukommen.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 499 Td (DER ERSTE SCHRITT) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 477 Td (Zunächst entsteht eine zuverlässige Maschine für ein Flipchart. Größere Wände und die) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 461 Td (vollständige Fotobox-Automatik sind spätere Ausbaustufen.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 426 Td (DAS BESONDERE) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 404 Td (Nicht nur das fertige Bild zählt: Besucher können verfolgen, wie aus vielen einzelnen) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 388 Td (Strichen ihre Zeichnung entsteht.) Tj ET
+0.08 0.36 0.38 RG 45 48 m 550 48 l S
+BT /F1 9 Tf 0.28 0.35 0.35 rg 45 31 Td (Polargraph-Fotobox  |  Projektkonzept, Stand November 2026) Tj ET
+BT /F2 9 Tf 0.28 0.35 0.35 rg 527 31 Td (1/5) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 1926 >>
+stream
+0.95 0.97 0.97 rg 0 0 595 842 re f
+0.08 0.36 0.38 rg 0 717 595 125 re f
+BT /F2 25 Tf 1 1 1 rg 45 784 Td (SO IST ES AUFGEBAUT) Tj ET
+BT /F1 12 Tf 0.88 0.96 0.94 rg 45 759 Td (Die wichtigsten Bauteile und Verbindungen) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 677 Td (ANDROID-HANDY) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 655 Td (Fotografiert, zeigt die Vorschau, berechnet den Zeichenweg und überträgt Bewegungsaufträge) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 639 Td (über USB-OTG. Das Redmi Note 9 Pro dient als erstes Testgerät; andere Android-Handys sollen) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 623 Td (ebenfalls nutzbar sein.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 588 Td (STEUERPLATINE) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 566 Td (Arduino Mega 2560 und RAMPS 1.4 erhalten die Aufträge und steuern zwei Schrittmotoren sowie) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 550 Td (einen Servo. Dafür werden zwei der fünf üblichen Motortreiberplätze genutzt.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 515 Td (MECHANIK) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 493 Td (Links und rechts oben sitzt jeweils ein Motor. Seile oder Zahnriemen halten und bewegen den) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 477 Td (Zeichenkopf. Dessen Mechanik trägt drei Stifte, von denen ein Servo einen auswählt.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 442 Td (VERSORGUNG UND SICHERHEIT) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 420 Td (Die Motoren benötigen ein geeignetes Netzteil, der Servo eine stabile Versorgung.) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 404 Td (Massebezug, Strombegrenzung, Anschlussbelegung und Notabschaltung sind vor dem ersten) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 388 Td (Betrieb zu prüfen.) Tj ET
+0.08 0.36 0.38 RG 45 48 m 550 48 l S
+BT /F1 9 Tf 0.28 0.35 0.35 rg 45 31 Td (Polargraph-Fotobox  |  Projektkonzept, Stand November 2026) Tj ET
+BT /F2 9 Tf 0.28 0.35 0.35 rg 527 31 Td (2/5) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 1787 >>
+stream
+0.95 0.97 0.97 rg 0 0 595 842 re f
+0.08 0.36 0.38 rg 0 717 595 125 re f
+BT /F2 25 Tf 1 1 1 rg 45 784 Td (WAS GIBT ES SCHON?) Tj ET
+BT /F1 12 Tf 0.88 0.96 0.94 rg 45 759 Td (Vorhandene Technik und eigene Entwicklungsarbeit) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 677 Td (VORHANDENE BAUSTEINE) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 655 Td (Arduino Mega, RAMPS, Schrittmotortreiber und bewährte Bewegungs-Firmware. Die) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 639 Td (Grundgeometrie eines Polargraphen ist bekannt. Auch Android-Kamera, USB-Kommunikation und) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 623 Td (Bildverarbeitung können auf existierenden Bibliotheken aufbauen.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 588 Td (WAS WIR SELBST KONSTRUIEREN) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 566 Td (Rahmen, Motorhalterungen, Seilführung, Zeichenkopf und die Mechanik zum automatischen) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 550 Td (Wechsel zwischen drei Stiften.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 515 Td (WAS WIR SELBST ABSTIMMEN) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 493 Td (Zeichenvorschau, brauchbare Porträtfilter, Korrektur der Stiftversätze, Gerätekommunikation) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 477 Td (und später die kamerabasierte Kalibrierung.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 442 Td (WICHTIG) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 420 Td (Erprobte Einzelteile bedeuten noch kein funktionierendes Gesamtsystem. Das Zusammenspiel) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 404 Td (der Bausteine muss entwickelt und getestet werden.) Tj ET
+0.08 0.36 0.38 RG 45 48 m 550 48 l S
+BT /F1 9 Tf 0.28 0.35 0.35 rg 45 31 Td (Polargraph-Fotobox  |  Projektkonzept, Stand November 2026) Tj ET
+BT /F2 9 Tf 0.28 0.35 0.35 rg 527 31 Td (3/5) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 1858 >>
+stream
+0.95 0.97 0.97 rg 0 0 595 842 re f
+0.08 0.36 0.38 rg 0 717 595 125 re f
+BT /F2 25 Tf 1 1 1 rg 45 784 Td (WO LIEGEN DIE SCHWIERIGKEITEN?) Tj ET
+BT /F1 12 Tf 0.88 0.96 0.94 rg 45 759 Td (Die entscheidenden Punkte beim gemeinsamen Bau) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 677 Td (GENAUIGKEIT) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 655 Td (Ungleichmäßiges Aufwickeln, Seildehnung, Spiel, Reibung oder Schwingungen können Linien) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 639 Td (verschieben. Die Mechanik muss auch über die gesamte Zeichenfläche präzise arbeiten.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 604 Td (DREI STIFTE) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 582 Td (Ein Servo soll jeden Stift einzeln zuverlässig absenken und alle Stifte anheben können.) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 566 Td (Unterschiede zwischen den Stiftspitzen müssen vermessen und ausgeglichen werden.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 531 Td (GUTE PORTRÄTS) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 509 Td (Ein Foto enthält zu viele Details. Wir brauchen klare Konturen und passende Schraffuren,) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 493 Td (damit Gesichter wiedererkennbar bleiben, ohne dass eine Zeichnung endlos dauert.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 458 Td (KAMERA UND AUTOMATIK) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 436 Td (Später sollen Zeichnungen optisch überprüft werden. Licht, Perspektive und Papierlage) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 420 Td (erschweren das. Papiertransport und Aktenvernichter brauchen zusätzliche) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 404 Td (Schutzvorrichtungen und Stauerkennung.) Tj ET
+0.08 0.36 0.38 RG 45 48 m 550 48 l S
+BT /F1 9 Tf 0.28 0.35 0.35 rg 45 31 Td (Polargraph-Fotobox  |  Projektkonzept, Stand November 2026) Tj ET
+BT /F2 9 Tf 0.28 0.35 0.35 rg 527 31 Td (4/5) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 1932 >>
+stream
+0.95 0.97 0.97 rg 0 0 595 842 re f
+0.08 0.36 0.38 rg 0 717 595 125 re f
+BT /F2 25 Tf 1 1 1 rg 45 784 Td (DER WEG ZUM FERTIGEN GERÄT) Tj ET
+BT /F1 12 Tf 0.88 0.96 0.94 rg 45 759 Td (In überschaubaren Ausbaustufen) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 677 Td (1. VIRTUELL TESTEN) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 655 Td (Seil-Geometrie, Zeichenwege und Motorbewegungen am Bildschirm simulieren.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 620 Td (2. ERSTE ECHTE ZEICHNUNGEN) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 598 Td (Rahmen und Motoren montieren, mit einem Stift einfache Muster auf dem Flipchart zeichnen.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 563 Td (3. DREI STIFTE UND FOTOS) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 541 Td (Stiftwechsel einbauen und die vom Handy erzeugten Zeichnungen ausgeben.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 506 Td (4. FOTBOX-BETRIEB) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 484 Td (Besucher fotografieren, lokalen Zeichenstil wählen und die Zeichnung automatisch starten.) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 468 Td (Online-KI nur als zusätzliche freiwillige Option.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 433 Td (5. SPÄTERE ERWEITERUNGEN) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 411 Td (Kamerabasierte Kalibrierung, gespeicherte Korrekturen, Papierrolle, Präsentationszeit und) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 395 Td (gesicherter Aktenvernichter.) Tj ET
+BT /F2 13 Tf 0.08 0.36 0.38 rg 45 360 Td (VOR DEM BAU ZU KLÄREN) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 338 Td (Motorabstand, Zeichenfläche, Seil- oder Riemenantrieb, Motor- und Treibertypen, Gewicht des) Tj ET
+BT /F1 10.7 Tf 0.14 0.17 0.17 rg 45 322 Td (Zeichenkopfs, Stifte und Stromversorgung.) Tj ET
+0.08 0.36 0.38 RG 45 48 m 550 48 l S
+BT /F1 9 Tf 0.28 0.35 0.35 rg 45 31 Td (Polargraph-Fotobox  |  Projektkonzept, Stand November 2026) Tj ET
+BT /F2 9 Tf 0.28 0.35 0.35 rg 527 31 Td (5/5) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R 10 0 R 12 0 R] /Count 5 >>
+endobj
+14 0 obj
+<< /Type /Catalog /Pages 13 0 R >>
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000214 00000 n 
+0000002201 00000 n 
+0000002338 00000 n 
+0000004315 00000 n 
+0000004452 00000 n 
+0000006290 00000 n 
+0000006427 00000 n 
+0000008336 00000 n 
+0000008474 00000 n 
+0000010458 00000 n 
+0000010597 00000 n 
+0000010681 00000 n 
+trailer
+<< /Size 15 /Root 14 0 R >>
+startxref
+10732
+%%EOF
